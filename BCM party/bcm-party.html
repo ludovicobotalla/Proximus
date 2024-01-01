@@ -41,7 +41,17 @@
     .mj-outlook-group-fix { width:100% !important; }
     </style>
     <![endif]-->
-    
+
+    <!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">
+        table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important; }
+        </style>
+    <![endif]-->
+        
     <!-- <mj-font name="FontName" href="https://recurring-5143.kxcdn.com/client/fonts/path.css" /> -->
   </head>
   <body bgcolor="#000000" style="word-spacing:normal;background-color:#000000;margin:0;padding:0;color:#593289;font-family: 'Proximus-Bold', Verdana, sans-serif;;">
@@ -54,7 +64,12 @@
                             <!--Header-->
                             <tr>
                                 <td align="center" bgcolor="#ffffff">
+                                    <!--[if !mso]><!-->
                                     <img border="0" src="assets/party_pxs_email_invitation_anim_header.gif" alt="BCM Party. It's gonna be a golden night !" width="600" height="193" style="border:0;display:block;outline:none;">
+                                    <!--<![endif]-->
+                                    <!--[if gte mso 9]>
+                                        <img border="0" src="assets/party_pxs_email_invitation_anim_header.png" alt="BCM Party. It's gonna be a golden night !" width="600" height="193" style="border:0;display:block;outline:none;">
+                                    <![endif]-->
                                 </td>
                             </tr>
                             <!--Body-->
