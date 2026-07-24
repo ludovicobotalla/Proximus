@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <title>Laat je niet vangen door phishing dankzij Proximus & Beego!</title>
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings> <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings>
+      </xml><!
+    [endif]-->
+    <!--[if mso]>
+      <style>
+        * {
+          font-family: sans-serif !important;
+        }
+      </style><!
+    [endif]-->
+    <!-- CSS Reset -->
+    <style>
+      :root {
+        color-scheme: light;
+        supported-color-schemes: light;
+      }
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+      #MessageViewBody,
+      #MessageWebViewDiv {
+        width: 100% !important;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      table {
+        border-spacing: 0 !important;
+        table-layout: fixed !important;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      a {
+        text-decoration: none;
+      }
+      a[x-apple-data-detectors], /* iOS */ .unstyle-auto-detected-links a, .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      .im {
+        color: inherit !important;
+      }
+      img.g-img + div {
+        display: none !important;
+      }
+      @media only screen and (min-device-width: 324px) and (max-device-width: 374px) {
+        u ~ div .email-container {
+          min-width: 324px !important;
+        }
+      }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u ~ div .email-container {
+          min-width: 375px !important;
+        }
+      }
+      @media only screen and (min-device-width: 414px) {
+        u ~ div .email-container {
+          min-width: 414px !important;
+        }
+      }
+    </style>
+
+    <!--Custom styles-->
+    <style>
+      .mobile {
+        display: none !important;
+      }
+      @media only screen and (max-width: 600px) {
+        .desktop-only {
+          display: none !important;
+        }
+        .mobile {
+          display: block !important;
+        }
+        *[class~="mobile"] {
+          display: block !important;
+          width: auto !important;
+          max-height: inherit !important;
+          overflow: visible !important;
+          float: none !important;
+        }
+        .devicewidth {
+          width: 100% !important;
+          min-width: 0 !important;
+        }
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        .stack-column-center {
+          text-align: center !important;
+        }
+        th {
+          display: block !important;
+        }
+        td[class="centered-on-mobile"] {
+          text-align: center !important;
+          height: 0 !important;
+        }
+        .padding0 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .border0 {
+          border: none !important;
+        }
+      }
+    </style>
+    <!-- <mj-font name="FontName" href="https://recurring-5143.kxcdn.com/client/fonts/path.css" /> -->
+
+  </head>
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f3f3f3">
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+      <u></u>
+    </div>
+    <!--[if mso | IE]>
+    <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="background-color: #F3F3F3;">
+      <tr>
+        <td>
+          <![endif]-->
+          <!-- EMAIL BODY -->
+          <div style="margin: 0px auto; max-width: 600px; padding-bottom: 24px;" class="email-container">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto">
+              <tr>
+                <td>
+
+                  <!-- ONLINE VERSION -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width: 600px" class="devicewidth">
+                    <tr>
+                      <td style="text-align: center; font-family: Verdana, Arial, sans-serif; font-size: 12px; line-height: 24px; color: #000000; font-weight: normal; padding: 16px 24px">
+                          E-mail onleesbaar? <strong class="droppable" id="clicktoview" style="color:#5a319d;text-decoration-line: underline;text-decoration: underline;font-weight: bold;"><u>klik hier.</u></strong>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- HEADER -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width: 600px" class="devicewidth">
+                    <tr>
+                      <td>
+                        <a href="https://proximus.beego.be" target="_blank" style="text-decoration: none">
+                          <!--Desktop-->
+                          <img src="images/header-desktop_nl.jpg" width="100%" alt="Proximus | BeeGo" border="0" style="width: 600px; margin: auto; display: block; border-radius:8px 8px 0 0;" class="g-img desktop-only devicewidth" />
+                          <!--Mobile-->
+                          <!--[if !mso]>-->
+                          <img src="images/header-mobile_nl.jpg" alt="Proximus | BeeGo" border="0" style="width: 0; max-height: 0; overflow: hidden; display: none; margin: 0 auto" class="g-img mobile devicewidth" />
+                          <!--<![endif]-->
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- INTRO -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width:600px;" class="devicewidth">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding: 10px 24px 24px 24px;border-radius: 0 0 8px 8px;">
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                          <!--Bonjour-->
+                          <tr>
+                            <td style="padding: 25px 0 24px 0; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #5c2d91; font-weight: 700">
+                              <span class="droppable" id="Name">Beste %FIRSTNAME%,</span>
+                            </td>
+                          </tr>
+                          <!--Text-->
+                          <tr>
+                            <td style="padding: 0 0 24px 0; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400">
+                              Onlangs organiseerden Proximus en Beego een <strong>gratis webinar over AI</strong>. Maar het digitale leven gaat verder.
+                              <br><br>
+                              Phishing, waarbij criminelen je misleiden met valse berichten, is een veelvoorkomend gevaar. Doe de test en ontdek of jij het herkent:
+                            </td>
+                          </tr>
+                          <!--CTA-->
+                          <tr>
+                            <td align="left" vertical-align="middle" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" bgcolor="#5c2d91" role="presentation" style="border:none;border-radius:3px 3px 16px 3px;cursor:auto;mso-padding-alt:12px 24px 14px 18px;background:#5c2d91;" valign="middle">
+                                      <a href="https://beego.be/phishing-test?utm_source=proximus&utm_medium=email&utm_campaign=" name="CTA_INTRO_NL" style="display:inline-block;background:#5c2d91;color:#ffffff;font-family:Verdana, sans-serif;font-size: 16px;font-weight:600;line-height:16px;margin:0;text-decoration:none;text-transform:none;padding:12px 24px 14px 18px;mso-padding-alt:0px;border-radius:3px 3px 16px 3px;" target="_blank">
+                                        Phishingtest van Safeonweb
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <!--Roland Text-->
+                          <tr>
+                            <td style="padding: 27px 0 22px 0; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #5c2d91;">
+                              Beego-lid Roland ging de uitdaging aan met consultant Lorenzo.
+                              <br>
+                              <strong>Benieuwd naar zijn resultaten?</strong>
+                            </td>
+                          </tr>
+                          <!--Roland Video-->
+                          <tr>
+                            <td align="center" style="padding: 0;">
+                              <a href="https://youtu.be/CuSvqRclyuU" target="_blank" name="VIDEO_ROLAND">
+                                <img src="images/roland-video.jpg" alt="Roland Video" border="0" width="552" style="border-radius: 4px; width: 100%; max-width: 552px; height: auto; display: block;">
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--Beego Super-zen DESKTOP-->
+                  <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px; border-collapse:collapse;" class="desktop-only">
+                    <tbody>
+                      <tr>
+                        <td style="padding: 30px 0;">
+                          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                            <tr>
+                              <!--IMG-->
+                              <td align="left">
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="285" height="160" style="width:285px; border-collapse:collapse;">
+                                  <tr>
+                                    <td align="center" bgcolor="#ffffff" style="border-radius: 8px;" width="285" height="160">
+                                      <img src="images/logo-beego.png" width="160">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <!--Text-->
+                              <td valign="top" align="left"style="padding: 15px 0 0 15px;">
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="285" style="width:285px; border-collapse:collapse;">
+                                  <tr>
+                                    <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400">
+                                      Met een Beego-lidmaatschap blijf je ook na het webinar je digitale vaardigheden versterken en krijg je ondersteuning wanneer je die nodig hebt.
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!--[if !mso]>-->
+                  <!--Beego Super-zen MOBILE-->
+                  <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px; border-collapse:collapse;display: none; mso-hide: all; max-height: 0px; overflow: hidden;padding-top: 30px;" class="mobile">
+                    <tbody>
+                      <!--Beego-->
+                      <tr>
+                        <td align="center" bgcolor="#ffffff" style="border-radius: 8px;padding: 50px 0;">
+                          <img src="images/logo-beego.png" width="300">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400; padding:30px 24px;">
+                          Met een Beego-lidmaatschap blijf je ook na het webinar je digitale vaardigheden versterken en krijg je ondersteuning wanneer je die nodig hebt.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--<![endif]-->
+
+                  <!--Light Purple Block-->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width:600px;" class="devicewidth">
+                    <tbody>
+                      <tr>
+                        <td bgcolor="#edeaf5" style="background-color: #edeaf5;border-radius: 8px 8px 0 0;padding: 24px;">
+                          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                            <!--Title-->
+                            <tr>
+                              <td style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #5c2d91; font-weight: 700">
+                                Word nu gratis lid van Beego voor 6 maanden en geniet van voordelen zoals:
+                              </td>
+                            </tr>
+                            <!--Icons-->
+                            <tr>
+                              <!--Desktop-->
+                              <td class="desktop-only">
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                  <!--Icons Row 1-->
+                                  <tr>
+                                    <td style="padding-top: 24px;">
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                        <tr>
+                                          <td>
+                                            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                              <tr>
+                                                <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;border-radius: 40px;" width="50" height="50">
+                                                  <img src="images/webinar.png" width="40" height="40">
+                                                </td>
+                                                <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400;padding-left: 15px;">
+                                                  Gratis webinars
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td>
+                                            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                              <tr>
+                                                <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;border-radius: 40px;" width="50" height="50">
+                                                  <img src="images/support.png" width="40" height="40">
+                                                </td>
+                                                <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400;padding-left: 15px;">
+                                                  Telefonische ondersteuning
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <!--Icons Row 2-->
+                                  <tr>
+                                    <td style="padding: 12px 0;">
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                        <tr>
+                                          <td>
+                                            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                              <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;border-radius: 40px;" width="50" height="50">
+                                                <img src="images/calendar.png" width="40" height="40">
+                                              </td>
+                                              <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400;padding-left: 15px;">
+                                                Maandelijkse tipvideo’s
+                                              </td>
+                                            </table>
+                                          </td>
+                                          <td>
+                                            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                              <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;border-radius: 40px;" width="50" height="50">
+                                                <img src="images/home.png" width="40" height="40">
+                                              </td>
+                                              <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400;padding-left: 15px;">
+                                                40% korting op hulp aan huis
+                                              </td>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <!--[if !mso]>-->
+                              <!--Mobile-->
+                              <td class="mobile" style="display: none; mso-hide: all; max-height: 0px; overflow: hidden;">
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                  <!--Icons Row 1-->
+                                  <tr>
+                                    <td style="padding-top: 24px;">
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                        <tr>
+                                          <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;border-radius: 40px;" width="50" height="50">
+                                            <img src="images/webinar.png" width="40" height="40">
+                                          </td>
+                                          <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400;padding-left: 15px;">
+                                            Gratis webinars
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-top: 12px;">
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                        <tr>
+                                          <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;border-radius: 40px;" width="50" height="50">
+                                            <img src="images/support.png" width="40" height="40">
+                                          </td>
+                                          <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400;padding-left: 15px;">
+                                            Telefonische ondersteuning
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-top: 12px;">
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                        <tr>
+                                          <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;border-radius: 40px;" width="50" height="50">
+                                            <img src="images/calendar.png" width="40" height="40">
+                                          </td>
+                                          <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400;padding-left: 15px;">
+                                            Maandelijkse tipvideo’s
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-top: 12px;">
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                                        <tr>
+                                          <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;border-radius: 40px;" width="50" height="50">
+                                            <img src="images/home.png" width="40" height="40">
+                                          </td>
+                                          <td align="center" style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400;padding-left: 15px;">
+                                            40 &percnt; de r&eacute;duction sur l&rsquo;aide &agrave; domicile
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <!--<![endif]-->
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!--Purple Block-->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width:600px;" class="devicewidth">
+                    <tr>
+                      <td bgcolor="#5c2d91" style="background-color: #5c2d91;border-radius: 0 0 8px 8px;padding: 24px;">
+                        <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%; border-collapse:collapse;">
+                          <!--CTA-->
+                          <tr>
+                            <td align="left" vertical-align="middle" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" bgcolor="#5c2d91" role="presentation" style="border:none;border-radius:3px 3px 16px 3px;cursor:auto;mso-padding-alt:12px 24px 14px 18px;background:#ffffff;" valign="middle">
+                                      <a href="https://proximus.beego.be" name="CTA_OUTRO_NL" style="display:inline-block;background:#ffffff;color:#5c2d91;font-family:Verdana, sans-serif;font-size: 16px;font-weight:600;line-height:16px;margin:0;text-decoration:none;text-transform:none;padding:12px 24px 14px 18px;mso-padding-alt:0px;border-radius:3px 3px 16px 3px;" target="_blank">
+                                        Word gratis lid!
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <!--Text-->
+                          <tr>
+                            <td style="padding-top: 12px; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; font-weight: 400; letter-spacing: -.02rem;">
+                              We helpen je graag op weg naar een veiliger digitaal leven.
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- OUTRO -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width: 600px" class="devicewidth">
+                    <tr>
+                      <td style="padding: 30px 24px 40px 24px">
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                          <tr>
+                            <td style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400">
+                              Met vriendelijke groeten,<br>
+                              <span style="font-weight: 700; color: #5c2d91">Het Proximus-team</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- FOOTER -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width: 600px" class="devicewidth">
+                    <tbody>
+                      <tr>
+                        <td style="padding: 24px; background: #5c2d91" class="paddingFooter">
+                          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+                            <tbody>
+                              <tr>
+                                <td style="padding-right: 24px" vertical-align="top">
+                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="left">
+                                    <tbody>
+                                      <tr class="webonly">
+                                        <td style="padding-bottom: 16px; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; font-weight: 400">Alle rechten voorbehouden, © 2025 Proximus</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding-bottom: 16px">
+                                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <th class="stack-column-center" width="90" style="width: 90px">
+                                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style="padding-right: 12px; border-right: 1px solid #ffffff; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; font-weight: 400" class="font12 padding0 border0 paddingBottom6">
+                                                          <a class="droppable" id="optout" href="#" name="FOOTER_NL_UNSUBSCRIBE" target="_blank" style="text-decoration: underline; color: #ffffff">Uitschrijven</a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </th>
+                                                <th class="stack-column-center" width="150" style="width: 150px">
+                                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style="padding: 0 12px; border-right: 1px solid #ffffff; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; font-weight: 400" class="font12 padding0 border0 paddingBottom6">
+                                                          <a href="https://www.proximus.be/fr/id_cr_warnland/particuliers/r-orphans/informations-legales.html" name="FOOTER_NL_LEGAL" target="_blank" style="text-decoration: underline; color: #ffffff">Wettelijke vermeldingen</a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </th>
+                                                <th class="stack-column-center">
+                                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style="padding-left: 12px; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; font-weight: 400" class="font12 padding0">
+                                                          <a href="https://www.proximus.be/fr/id_cr_warnland/particuliers/produits/r-orphans/informations-legales.html/#privacy" name="FOOTER_NL_PRIVACY" target="_blank" style="text-decoration: underline; color: #ffffff">Privacy</a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </th>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; font-weight: 400" class="webonly">Proximus NV van publiek recht, Koning Albert II-laan 27, B-1030 Brussel, BTW BE 0202.239.951 RPR Brussel, BE82 2100 0008 8968 GEBABEBB</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td width="120" style="width: 124px">
+                                  <a href="https://www.proximus.be/nl/" target="_blank" style="text-decoration: none">
+                                    <img src="https://www.proximus.be/dam/cdn/mails/DIG/202406_pickxapp_AK/prox.png" width="81" alt="." border="0" style="width: 124px; margin: auto; display: block" class="g-img" />
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if mso | IE]>
+        </td>
+      </tr>
+    </table><![endif]-->
+  </body>
+</html>
