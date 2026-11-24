@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <title>C'est le moment de passer à la fibre</title>
+
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings> <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if mso]>
+      <style>
+        * {font-family: sans-serif !important;}
+      </style>
+    <![endif]-->
+
+    <!--CSS Reset-->
+    <style>
+      :root {
+        color-scheme: light;
+        supported-color-schemes: light;
+      }
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+      #MessageViewBody,
+      #MessageWebViewDiv {
+        width: 100% !important;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      table {
+        border-spacing: 0 !important;
+        table-layout: fixed !important;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      a {
+        text-decoration: none;
+      }
+      a[x-apple-data-detectors], /* iOS */ .unstyle-auto-detected-links a, .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      .im {
+        color: inherit !important;
+      }
+      img.g-img + div {
+        display: none !important;
+      }
+      @media only screen and (min-device-width: 324px) and (max-device-width: 374px) {
+        u ~ div .email-container {
+          min-width: 324px !important;
+        }
+      }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u ~ div .email-container {
+          min-width: 375px !important;
+        }
+      }
+      @media only screen and (min-device-width: 414px) {
+        u ~ div .email-container {
+          min-width: 414px !important;
+        }
+      }
+    </style>
+
+    <!--Custom styles-->
+    <style>
+      .mobile {
+        display: none !important;
+      }
+      @media only screen and (max-width: 600px) {
+        .desktop-only {
+          display: none !important;
+        }
+        .mobile {
+          display: block !important;
+        }
+        *[class~="mobile"] {
+          display: block !important;
+          width: auto !important;
+          max-height: inherit !important;
+          overflow: visible !important;
+          float: none !important;
+        }
+        .devicewidth {
+          width: 100% !important;
+          min-width: 0 !important;
+        }
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        .stack-column-center {
+          text-align: center !important;
+        }
+        th {
+          display: block !important;
+        }
+        td[class="centered-on-mobile"] {
+          text-align: center !important;
+          height: 0 !important;
+        }
+        .padding0 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .border0 {
+          border: none !important;
+        }
+      }
+    </style>
+
+    <!--Footer CSS-->
+    <style type="text/css">
+      @media only screen and (max-width:600px) {
+        .pxs-footer {width:100% !important}
+        .pxs-footer-apps {width:100% !important}
+        .pxs-footer-apps img {height:65px !important;width:auto !important}
+        .pxs-footer-apps td {font-size:12px !important}
+        .pxs-footer-social {padding:25px 20px !important}
+        .pxs-footer-social table {margin:0 auto !important}
+        .pxs-footer-legal, .pxs-footer-logo {
+          display:block !important;
+          width:auto !important;
+          padding:0 20px 20px !important;
+          text-align:center !important;
+        }
+        .pxs-footer-logo img {margin:0 auto !important}
+      }
+    </style>
+
+  </head>
+
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f3f3f3">
+    <!--[if mso | IE]>
+    <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="background-color: #F3F3F3;">
+      <tr>
+        <td>
+          <![endif]-->
+          <!-- EMAIL BODY -->
+          <div style="margin: 0px auto; max-width: 600px;" class="email-container">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto">
+              <tr>
+                <td>
+
+                  <!-- ONLINE VERSION -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width: 600px" class="devicewidth">
+                    <tr>
+                      <td style="text-align: center; font-family: Verdana, Arial, sans-serif; font-size: 12px; line-height: 24px; color: #000000; font-weight: normal; padding: 16px 24px">
+                          E-mail illisible ? <span class="droppable" id="clicktoview" style="color:#5a319d;text-decoration-line: underline;text-decoration: underline;"><u>Lisez la version en ligne.</u></span>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- HEADER -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width: 600px" class="devicewidth">
+                    <!--Header-->
+                    <tr>
+                      <td >
+                        <a href="https://www.proximus.be/fr/packs" target="_blank" style="text-decoration: none">
+                          <!--Desktop-->
+                          <img src="images/fiber_do_prospect_desktop_fr.jpg" width="100%" alt="Proximus | Fiber" border="0" style="width: 600px; margin: auto; display: block; border-radius:8px 8px 0 0;" class="g-img desktop-only devicewidth" />
+                          <!--Mobile-->
+                          <!--[if !mso]>-->
+                            <img src="images/fiber_do_prospect_mobile_fr.jpg" alt="Proximus | Fiber" border="0" style="width: 0; max-height: 0; overflow: hidden; display: none; margin: 0 auto" class="g-img mobile devicewidth" />
+                          <!--<![endif]-->
+                        </a>
+                      </td>
+                    </tr>
+                    <!--Subheader-->
+                    <tr>
+                      <td style="padding-bottom: 30px;">
+                        <a href="https://www.proximus.be/fr/packs" target="_blank" style="text-decoration: none">
+                          <img src="images/steps_fr.gif" width="100%" alt="Proximus | Fiber" border="0" style="width: 600px; margin: auto; display: block; border-radius: 0 0 8px 8px;" class="g-img devicewidth" />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--INTRO-->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width:600px;" class="devicewidth">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding: 32px 24px;border-radius: 8px 8px 0 0;">
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                          <!--Bonjour-->
+                          <tr>
+                            <td style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 24px; line-height: 24px; color: #5c2d91; font-weight: 700">
+                              <span class="droppable" id="Name">Bonjour %FIRSTNAME%,</span>
+                            </td>
+                          </tr>
+                          <!--Text-->
+                          <tr>
+                            <td style="padding: 32px 0; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #0a0a0a; font-weight: 400">
+                              La fibre Proximus est disponible dans votre rue, %%street%%.
+                              <br><br>
+                              Passez dès aujourd’hui à l’internet le plus rapide et le plus stable de Belgique et profitez de <strong>%%promo%%</strong> ainsi que de <strong>l'installation gratuite</strong>.
+                            </td>
+                          </tr>
+                          <!--CTA-->
+                          <tr>
+                            <td align="left" vertical-align="middle" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" bgcolor="#5c2d91" role="presentation" style="border:none;border-radius:4px 4px 25px 4px;cursor:auto;mso-padding-alt:20px 24px;background:#5c2d91;" valign="middle">
+                                      <a href="https://www.proximus.be/fr/packs" name="CTA_INTRO_FR" style="display:inline-block;background:#5c2d91;color:#ffffff;font-family:Verdana, sans-serif;font-size: 16px;font-weight:600;line-height:16px;margin:0;text-decoration:none;text-transform:none;padding:20px 24px;mso-padding-alt:0px;border-radius:4px 4px 25px 4px;" target="_blank">
+                                        Passez à la fibre
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--Purple Block-->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width:600px;" class="devicewidth">
+                    <tr>
+                      <td bgcolor="#5c2d91" style="border-radius: 0 0 8px 8px;padding: 32px 24px;">
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                          <!--Title-->
+                          <tr>
+                            <td style="text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 24px; line-height: 24px; color: #ffffff; font-weight: 700">
+                              <span>Passez à la fibre dès aujourd'hui </span>
+                            </td>
+                          </tr>
+                          <!--Paragraph-->
+                          <tr>
+                            <td style="padding: 32px 0;text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; font-weight: 400">
+                              Composez l’offre fibre adaptée à vos besoins et profitez de l’internet le plus rapide et le plus stable du pays.
+                            </td>
+                          </tr>
+                          <!--Icons-->
+                          <tr>
+                            <td>
+                              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                  <!--Internet-->
+                                  <td>
+                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                      <tr>
+                                        <td align="center" style="padding-bottom: 5px;">
+                                          <img width="20" src="images/check.png" alt="checkmark" border="0" style="display: block;"/>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="text-align: center; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; font-weight: 700">
+                                          <span>Internet</span>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!--Mobile-->
+                                  <td>
+                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                      <tr>
+                                        <td align="center" style="padding-bottom: 5px;">
+                                          <img width="20" src="images/check.png" alt="checkmark" border="0" style="display: block;"/>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="text-align: center; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; font-weight: 700">
+                                          <span>Mobile</span>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!--TV-->
+                                  <td>
+                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                      <tr>
+                                        <td align="center" style="padding-bottom: 5px;">
+                                          <img width="20" src="images/check.png" alt="checkmark" border="0" style="display: block;"/>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="text-align: center; font-family: Verdana, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; font-weight: 700">
+                                          <span>TV</span>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--Legal-->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width:600px;" class="devicewidth">
+                    <tr>
+                      <td style="padding: 64px 24px 24px 24px; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 14px; line-height: 17px; color: #333333; font-weight: 400">
+                        <strong>Prix normal :</strong> à partir de € 69,99/mois pour un pack Flex+ Go Fiber avec Mobile Flex+ Essential.
+                        <br>
+                        <strong>Promo :</strong> valable du 01/10 au 01/11/2026 inclus, pour tout nouvel abonné internet qui souscrit un abonnement à Flex+ Fiber avec INT + MOB. Réduction mensuelle de € 35/mois pendant les 6 premiers mois, en fonction de la composition du pack par le client. Réduction additionnelle de € 5/mois pendant les 6 premiers mois avec l’internet Giga et Ultra Fiber. Après, vous payez le prix normal. Si le prix de base de l’abonnement est augmenté, le prix promotionnel augmentera également du même montant. Non compatible avec d’autres promotions, à l’exception de l’offre combinée d’un smartphone avec un abonnement GSM et l’option DataPhone. 
+                        <br>
+                        <strong>Internet fixe le plus rapide et le plus stable de Belgique :</strong> uniquement si votre adresse est éligible à la fibre. Infos et études comparatives sur proximus.be/fibre.
+                        <strong>Installation gratuite :</strong> pour tous les nouveaux clients Flex+ Fiber, si l’installation par vous-même n’est pas possible.
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--FOOTER-->
+                  <table role="presentation" class="pxs-footer" align="center" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#5c2d91" style="width:600px;border-collapse:collapse;font-family:Verdana,Geneva,sans-serif">
+                    <tr>
+                      <td align="center" bgcolor="#ffffff" style="padding:20px 0">
+                        <table role="presentation" class="pxs-footer-apps" align="center" width="400" cellpadding="0" cellspacing="0" border="0" style="width:400px;border-collapse:collapse">
+                          <tr>
+                            <td width="50%" align="center" valign="top" style="padding:0 5px;color:#333333;font-size:13px;line-height:20px">
+                              <a href="https://www.proximus.be/fr/app" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_pxsplus.png" alt="Proximus+" height="60" border="0" style="display:block;border:0;height:60px;margin:0 auto"></a>
+                              <p style="margin:5px 0 0"><strong>L'app Proximus :<br>toujours là, pour vous</strong></p>
+                            </td>
+                            <td width="50%" align="center" valign="top" style="padding:0 5px;color:#333333;font-size:13px;line-height:20px">
+                              <a href="https://pxtvapp.pickx.be/home?v1=email&amp;v5=dynamiclink&amp;v6=other-other-pxs-emailfooter" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_pickx.png" alt="Pickx app" height="60" border="0" style="display:block;border:0;height:60px;margin:0 auto"></a>
+                              <p style="margin:5px 0 0"><strong>Pickx : la télé<br>que vous allez aimer</strong></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pxs-footer-social" style="padding:30px 40px">
+                        <table role="presentation" width="190" cellpadding="0" cellspacing="0" border="0" style="width:190px;border-collapse:collapse;table-layout:fixed">
+                          <tr>
+                              <td width="50" style="width:50px"><a href="https://www.instagram.com/proximus" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_insta.png" alt="Proximus Instagram" width="50" border="0" style="display:block;border:0;width:50px"></a></td>
+                              <td width="20" style="width:20px;font-size:0;line-height:0">&nbsp;</td>
+                              <td width="50" style="width:50px"><a href="https://www.youtube.com/proximus" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_yt.png" alt="Proximus YouTube" width="50" border="0" style="display:block;border:0;width:50px"></a></td>
+                              <td width="20" style="width:20px;font-size:0;line-height:0">&nbsp;</td>
+                              <td width="50" style="width:50px"><a href="https://www.facebook.com/proximusbe" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_fb.png" alt="Proximus Facebook" width="50" border="0" style="display:block;border:0;width:50px"></a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;table-layout:fixed">
+                          <tr>
+                            <td class="pxs-footer-legal" width="380" valign="top" style="padding:0 0 30px 40px;color:#ffffff;font-size:10px;line-height:15px;mso-line-height-rule:exactly">
+                              <p style="margin:0 0 15px">Tous droits réservés, © <strong><a href="https://www.proximus.com/fr/our-company/company.html" target="_blank" style="color:#ffffff;text-decoration:underline">2026 Proximus</a></strong></p>
+                              <p style="margin:0 0 15px"><a href="#" id="optout" class="droppable" target="_blank" style="color:#ffffff;text-decoration:underline">Se désinscrire</a> | <a href="https://www.proximus.be/fr/id_cr_warnland/particuliers/r-orphans/informations-legales.html" target="_blank" style="color:#ffffff;text-decoration:underline">Mentions légales</a> | <a href="https://www.proximus.be/fr/id_cr_privacy_policy/particuliers/r-orphans/vie-privee.html" target="_blank" style="color:#ffffff;text-decoration:underline">Vie privée</a></p>
+                              <p style="margin:0">Proximus SA de droit public, Boulevard du Roi Albert II, 27 B - 1030 Bruxelles, TVA BE 0202.239.951 RPM Bruxelles, BE82 2100 008 8968 GEBABEBB</p>
+                            </td>
+                            <td class="pxs-footer-logo" align="center" valign="middle" style="padding:0 20px 30px 0">
+                              <img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/prox.png" alt="Logo Proximus" width="130" border="0" style="display:block;border:0;width:130px">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if mso | IE]>
+        </td>
+      </tr>
+    </table><![endif]-->
+  </body>
+</html>
