@@ -52,7 +52,6 @@
       }
       table {
         border-spacing: 0 !important;
-        table-layout: fixed !important;
       }
       img {
         -ms-interpolation-mode: bicubic;
@@ -102,6 +101,9 @@
       .mobile {
         display: none !important;
       }
+      .border-radius {border-radius: 8px;}
+      .border-radius_top {border-radius: 8px 8px 0 0;}
+      .border-radius_bottom {border-radius: 0 0 8px 8px;}
       @media only screen and (max-width: 600px) {
         .desktop-only {
           display: none !important;
@@ -144,25 +146,137 @@
         .border0 {
           border: none !important;
         }
+        .border-radius {border-radius: 0;}
+        .border-radius_top {border-radius: 0;}
+        .border-radius_bottom {border-radius: 0;}
       }
     </style>
 
     <!--Footer CSS-->
     <style type="text/css">
-      @media only screen and (max-width:600px) {
-        .pxs-footer {width:100% !important}
-        .pxs-footer-apps {width:100% !important}
-        .pxs-footer-apps img {height:65px !important;width:auto !important}
-        .pxs-footer-apps td {font-size:12px !important}
-        .pxs-footer-social {padding:25px 20px !important}
-        .pxs-footer-social table {margin:0 auto !important}
-        .pxs-footer-legal, .pxs-footer-logo {
-          display:block !important;
-          width:auto !important;
-          padding:0 20px 20px !important;
-          text-align:center !important;
+      table.bg .a {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 16px;
+        color: #000000;
+        background-color: #f3f3f3;
+      }
+      table.bg .a table {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      table.bg .a img {
+        display: block;
+        font-size: 14px;
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        margin: 0;
+      }
+      table.bg .a p,
+      table.bg .a a {
+        mso-line-height-rule: exactly;
+        font-weight: normal;
+      }
+      table.bg .a a { text-decoration: underline; }
+      table.bg .a .j { background-color: #ffffff; }
+      table.bg .a .j p {
+        font-family: Verdana, Geneva, sans-serif;
+        line-height: 150%;
+        letter-spacing: 0;
+        font-weight: normal;
+        color: #333333;
+        font-size: 14px;
+      }
+      table.bg .a .j a {
+        color: #2cb543;
+        font-size: 14px;
+        font-weight: inherit;
+      }
+      table.bg .a strong { font-weight: 700 !important; }
+      table.bg .z {
+        display: none;
+        float: left;
+        overflow: hidden;
+        width: 0;
+        max-height: 0;
+        line-height: 0;
+        mso-hide: all;
+      }
+
+      @media only screen and (max-width: 600px) {
+        table.bg .cm { padding-right: 10px !important; }
+        table.bg .ck { padding-left: 40px !important; }
+        table.bg .cj { padding-bottom: 20px !important; }
+        table.bg .ci { padding-bottom: 10px !important; }
+        table.bg .ch { padding-right: 5px !important; }
+        table.bg .cg { padding-right: 90px !important; }
+        table.bg .ce { padding-right: 20px !important; }
+        table.bg .cd { padding: 0 !important; }
+        table.bg .cc { padding-top: 30px !important; }
+        table.bg .cb { padding-bottom: 30px !important; }
+        table.bg .ca { padding-left: 38px !important; }
+        table.bg .bz { padding-left: 20px !important; }
+        table.bg .by { padding-right: 15px !important; }
+        table.bg .bx { padding-bottom: 0 !important; }
+        table.bg .bw { padding-left: 15px !important; }
+        table.bg .cf {padding-left:0 !important;}
+
+
+        table.bg .x { text-align: center !important; }
+        table.bg .w { text-align: left !important; }
+        table.bg .x img,
+        table.bg .w img { display: inline !important; }
+        table.bg .bp { display: inline-table; }
+        table.bg .bi,
+        table.bg .bj {
+          width: 100% !important;
+          border-collapse: separate !important;
         }
-        .pxs-footer-logo img {margin:0 auto !important}
+        table.bg,
+        table.bg table {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+        table.bg .adapt-img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        table.bg .bb { display: none !important; }
+        table.bg .z {
+          width: auto !important;
+          overflow: visible !important;
+          float: none !important;
+          max-height: inherit !important;
+          line-height: inherit !important;
+        }
+        table.bg tr.z { display: table-row !important; }
+
+        table.bg .a p,
+        table.bg .a a { line-height: 150% !important; }
+        table.bg .a .j p,
+        table.bg .a .j a { font-size: 14px !important; }
+        table.bg .a .img-9722,
+        table.bg .a .img-0365 { height: 65px !important; }
+        table.bg .a .img-8123,
+        table.bg .a .img-3694,
+        table.bg .a .img-6680 { width: 52px !important; }
+        table.bg .a .img-1584 { width: 130px !important; }
+        table.bg .a table.i { width: 72% !important; }
+        table.bg .a .h { width: 50% !important; }
+        table.bg .a .g { width: 0 !important; }
+
+        table.bg .a .e,
+        table.bg .a .e p,
+        table.bg .a .e a,
+        table.bg .a .e strong { font-size: 10px !important; }
+        table.bg .a .e .f,
+        table.bg .a .e .f * { font-size: 11px !important; }
+        table.bg .a .b .d,
+        table.bg .a .b .d * { font-size: 13px !important; }
+        table.bg .a .b .c,
+        table.bg .a .b .c * { font-size: 12px !important; }
       }
     </style>
 
@@ -170,7 +284,7 @@
 
   <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f3f3f3">
     <!--[if mso | IE]>
-    <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="background-color: #F3F3F3;">
+    <table width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="background-color: #F3F3F3;">
       <tr>
         <td>
           <![endif]-->
@@ -191,25 +305,34 @@
 
                   <!-- HEADER -->
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width: 600px" class="devicewidth">
-                    <!--Header-->
-                    <tr>
-                      <td >
-                        <a href="https://www.proximus.be/fr/packs" target="_blank" style="text-decoration: none">
-                          <!--Desktop-->
-                          <img src="images/fiber_do_prospect_desktop_fr.jpg" width="100%" alt="Proximus | Fiber" border="0" style="width: 600px; margin: auto; display: block; border-radius:8px 8px 0 0;" class="g-img desktop-only devicewidth" />
-                          <!--Mobile-->
-                          <!--[if !mso]>-->
-                            <img src="images/fiber_do_prospect_mobile_fr.jpg" alt="Proximus | Fiber" border="0" style="width: 0; max-height: 0; overflow: hidden; display: none; margin: 0 auto" class="g-img mobile devicewidth" />
-                          <!--<![endif]-->
-                        </a>
-                      </td>
-                    </tr>
-                    <!--Subheader-->
                     <tr>
                       <td style="padding-bottom: 30px;">
-                        <a href="https://www.proximus.be/fr/packs" target="_blank" style="text-decoration: none">
-                          <img src="images/steps_fr.gif" width="100%" alt="Proximus | Fiber" border="0" style="width: 600px; margin: auto; display: block; border-radius: 0 0 8px 8px;" class="g-img devicewidth" />
-                        </a>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width: 600px" class="devicewidth">
+                          <tr>
+                            <td bgcolor="#b98ddb" class="border-radius">
+                              <a href="https://www.proximus.be/fr/packs" target="_blank" style="text-decoration: none">
+                                <!--Desktop-->
+                                <img src="https://ludovicobotalla.github.io/Proximus/Fiber%20RES%20Brownfield%20acquisision%20rulers/Fiber_FR/DO/Prospect/images/fiber_do_prospect_desktop_fr.jpg" width="600" alt="Proximus | Fiber" border="0" style="width: 600px; margin: auto; display: block;" class="g-img desktop-only devicewidth border-radius_top" />
+                                <!--Mobile-->
+                                <!--[if !mso]>-->
+                                  <img src="https://ludovicobotalla.github.io/Proximus/Fiber%20RES%20Brownfield%20acquisision%20rulers/Fiber_FR/DO/Prospect/images/fiber_do_prospect_mobile_fr.jpg" alt="Proximus | Fiber" border="0" style="width: 0; max-height: 0; overflow: hidden; display: none; margin: 0 auto" class="g-img mobile devicewidth" />
+                                <!--<![endif]-->
+                                <!--GIF-->
+                                <!--[if mso]>
+                                  <img src="https://ludovicobotalla.github.io/Proximus/Fiber%20RES%20Brownfield%20acquisision%20rulers/Fiber_FR/DO/Prospect/images/steps_fr.gif"
+                                      width="600" height="125" alt="Proximus | Fiber" border="0"
+                                      style="display:block; width:600px; height:125px;">
+                                <![endif]-->
+                                <!--[if !mso]><!-- -->
+                                  <img src="https://ludovicobotalla.github.io/Proximus/Fiber%20RES%20Brownfield%20acquisision%20rulers/Fiber_FR/DO/Prospect/images/steps_fr.gif"
+                                    width="600" alt="Proximus | Fiber" border="0"
+                                    class="border-radius_bottom devicewidth g-img"
+                                    style="display:block; width:100%; height:auto;">
+                                <!--<![endif]-->
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
@@ -217,7 +340,7 @@
                   <!--INTRO-->
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width:600px;" class="devicewidth">
                     <tr>
-                      <td bgcolor="#ffffff" style="padding: 32px 24px;border-radius: 8px 8px 0 0;">
+                      <td bgcolor="#ffffff" style="padding: 32px 24px;" class="border-radius_top">
                         <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                           <!--Bonjour-->
                           <tr>
@@ -257,7 +380,7 @@
                   <!--Purple Block-->
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="width:600px;" class="devicewidth">
                     <tr>
-                      <td bgcolor="#5c2d91" style="border-radius: 0 0 8px 8px;padding: 32px 24px;">
+                      <td bgcolor="#5c2d91" style="padding: 32px 24px;" class="border-radius_bottom">
                         <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                           <!--Title-->
                           <tr>
@@ -277,11 +400,11 @@
                               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                                 <tr>
                                   <!--Internet-->
-                                  <td>
+                                  <td width="184">
                                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                                       <tr>
                                         <td align="center" style="padding-bottom: 5px;">
-                                          <img width="20" src="images/check.png" alt="checkmark" border="0" style="display: block;"/>
+                                          <img width="20" src="https://ludovicobotalla.github.io/Proximus/Fiber%20RES%20Brownfield%20acquisision%20rulers/Fiber_FR/DO/Prospect/images/check.png" alt="checkmark" border="0" style="display: block;"/>
                                         </td>
                                       </tr>
                                       <tr>
@@ -292,11 +415,11 @@
                                     </table>
                                   </td>
                                   <!--Mobile-->
-                                  <td>
+                                  <td width="184">
                                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                                       <tr>
                                         <td align="center" style="padding-bottom: 5px;">
-                                          <img width="20" src="images/check.png" alt="checkmark" border="0" style="display: block;"/>
+                                          <img width="20" src="https://ludovicobotalla.github.io/Proximus/Fiber%20RES%20Brownfield%20acquisision%20rulers/Fiber_FR/DO/Prospect/images/check.png" alt="checkmark" border="0" style="display: block;"/>
                                         </td>
                                       </tr>
                                       <tr>
@@ -307,11 +430,11 @@
                                     </table>
                                   </td>
                                   <!--TV-->
-                                  <td>
+                                  <td width="184">
                                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                                       <tr>
                                         <td align="center" style="padding-bottom: 5px;">
-                                          <img width="20" src="images/check.png" alt="checkmark" border="0" style="display: block;"/>
+                                          <img width="20" src="https://ludovicobotalla.github.io/Proximus/Fiber%20RES%20Brownfield%20acquisision%20rulers/Fiber_FR/DO/Prospect/images/check.png" alt="checkmark" border="0" style="display: block;"/>
                                         </td>
                                       </tr>
                                       <tr>
@@ -345,52 +468,357 @@
                   </table>
 
                   <!--FOOTER-->
-                  <table role="presentation" class="pxs-footer" align="center" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#5c2d91" style="width:600px;border-collapse:collapse;font-family:Verdana,Geneva,sans-serif">
+                  <table cellspacing="0" cellpadding="0" align="center" class="bg" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important;background-color:transparent;background-repeat:repeat;background-position:center top">
+                    <tbody>
                     <tr>
-                      <td align="center" bgcolor="#ffffff" style="padding:20px 0">
-                        <table role="presentation" class="pxs-footer-apps" align="center" width="400" cellpadding="0" cellspacing="0" border="0" style="width:400px;border-collapse:collapse">
-                          <tr>
-                            <td width="50%" align="center" valign="top" style="padding:0 5px;color:#333333;font-size:13px;line-height:20px">
-                              <a href="https://www.proximus.be/fr/app" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_pxsplus.png" alt="Proximus+" height="60" border="0" style="display:block;border:0;height:60px;margin:0 auto"></a>
-                              <p style="margin:5px 0 0"><strong>L'app Proximus :<br>toujours là, pour vous</strong></p>
-                            </td>
-                            <td width="50%" align="center" valign="top" style="padding:0 5px;color:#333333;font-size:13px;line-height:20px">
-                              <a href="https://pxtvapp.pickx.be/home?v1=email&amp;v5=dynamiclink&amp;v6=other-other-pxs-emailfooter" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_pickx.png" alt="Pickx app" height="60" border="0" style="display:block;border:0;height:60px;margin:0 auto"></a>
-                              <p style="margin:5px 0 0"><strong>Pickx : la télé<br>que vous allez aimer</strong></p>
-                            </td>
-                          </tr>
-                        </table>
+                      <td align="center" bgcolor="#f3f3f3" class="a" style="font-family:verdana, geneva, sans-serif;font-size:16px;color:#000000;background-color:#f3f3f3;padding:0;Margin:0;background:#f3f3f3">
+                      <table cellspacing="0" cellpadding="0" bgcolor="transparent" align="center" class="bs j" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px" role="none">
+                        <tbody>
+                        <tr>
+                          <td align="left" style="padding:0;Margin:0">
+                          <table cellpadding="0" cellspacing="0" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                            <tbody>
+                            <tr>
+                              <td align="left" style="padding:0;Margin:0;width:600px">
+                              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                <tbody>
+                                <tr>
+                                  <td align="center" style="padding:0;Margin:0;font-size:0">
+                                  <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" class="bp" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tbody>
+                                    <tr>
+                                      <td style="padding:0;Margin:0;margin:0px;border-bottom:1px solid #ffffff;background:none;height:0px;width:100%"></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr class="bb">
+                          <td align="left" bgcolor="#ffffff" style="padding:20px 0;Margin:0;background-color:#ffffff">
+                          <table cellpadding="0" cellspacing="0" class="esdev-mso-table" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:600px">
+                            <tbody>
+                            <tr>
+                              <td valign="top" class="esdev-mso-td ch h" style="padding:0;Margin:0">
+                              <table cellspacing="0" align="left" cellpadding="0" class="bi" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:350px">
+                                  <table role="presentation" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:350px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="center" style="padding:0 0 0 80px;Margin:0;font-size:0"><a target="_blank" href="https://www.proximus.be/fr/app" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img title="Proximus+" alt="Proximus+" src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_pxsplus.png" height="60" class="adapt-img" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" class="b" style="padding:5px 0 0 80px;Margin:0">
+                                      <p class="d" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:20px;letter-spacing:0;color:#333333;font-size:13px;Margin:0"><strong style="font-weight:700 !important">L'app Proximus :&nbsp;<br>toujours là, pour vous</strong></p>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                              <td valign="top" class="esdev-mso-td h" style="padding:0;Margin:0">
+                              <table cellpadding="0" cellspacing="0" align="right" class="bj" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:250px">
+                                  <table cellspacing="0" role="presentation" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:250px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="left" style="padding:0 0 0 30px;Margin:0;font-size:0"><a target="_blank" href="https://pxtvapp.pickx.be/home?v1=email&v5=dynamiclink&v6=other-other-pxs-emailfooter" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_pickx.png" alt="Pickx app" height="60" title="Pickx app" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" class="cg b" style="padding:5px 125px 0 0;Margin:0">
+                                      <p class="d" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:20px;letter-spacing:0;color:#333333;font-size:13px;Margin:0"><strong style="font-weight:700 !important">Pickx : la télé que vous allez aimer</strong></p>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+                        <!--[if !mso]><!-- -->
+                        <tr class="z" style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
+                          <td align="left" bgcolor="#ffffff" class="cm ck" style="padding:20px 0;Margin:0;background-color:#ffffff">
+                          <table cellpadding="0" cellspacing="0" class="esdev-mso-table" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:600px">
+                            <tbody>
+                            <tr>
+                              <td valign="top" class="esdev-mso-td h" style="padding:0;Margin:0">
+                              <table cellpadding="0" cellspacing="0" align="left" class="bi" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:300px">
+                                  <table role="presentation" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:300px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="right" class="x" style="padding:0;Margin:0;font-size:0"><a href="https://www.proximus.be/fr/app" target="_blank" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_pxsplus.png" title="Proximus+" height="103" alt="Proximus+" class="img-0365" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" class="cf b" style="padding:5px 0 0 80px;Margin:0">
+                                      <p class="c" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:20px;letter-spacing:0;color:#333333;font-size:13px;Margin:0"><strong style="font-weight:700 !important">L'app Proximus : toujours là, pour vous</strong></p>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                              <td class="g ch" style="padding:0;Margin:0;width:20px"></td>
+                              <td valign="top" class="esdev-mso-td h" style="padding:0;Margin:0">
+                              <table cellpadding="0" cellspacing="0" align="right" class="bj" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:280px">
+                                  <table cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:280px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="left" class="x" style="padding:0;Margin:0;font-size:0"><a href="https://pxtvapp.pickx.be/home?v1=email&v5=dynamiclink&v6=other-other-pxs-emailfooter" target="_blank" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_pickx.png" alt="Pickx app" height="103" title="Pickx app" class="img-9722" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" class="ce b" style="padding:5px 100px 0 0;Margin:0">
+                                      <p class="c" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:20px;letter-spacing:0;color:#333333;font-size:13px;Margin:0"><strong style="font-weight:700 !important">Pickx : la télé que<br>vous allez aimer</strong></p>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+                        <!--<![endif]-->
+                        <tr class="bb">
+                          <td bgcolor="#5c2d91" align="left" style="padding:30px 0 0 40px;Margin:0;background-color:#5c2d91">
+                          <table cellpadding="0" cellspacing="0" class="esdev-mso-table" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:560px;table-layout: auto !important">
+                            <tbody>
+                            <tr>
+                              <td valign="top" class="esdev-mso-td" style="padding:0;Margin:0">
+                              <table cellspacing="0" align="left" cellpadding="0" class="bi" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:50px">
+                                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="left" style="padding:0;Margin:0;font-size:0"><a target="_blank" href="https://www.instagram.com/proximus" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img referrerpolicy title="Proximus Instagram" width="50" src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_insta.png" alt="Proximus Instagram" class="adapt-img" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                              <td class="g ce" style="padding:0;Margin:0;width:20px"></td>
+                              <td valign="top" class="esdev-mso-td" style="padding:0;Margin:0">
+                              <table cellpadding="0" cellspacing="0" align="left" class="bi" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:50px">
+                                  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="left" style="padding:0;Margin:0;font-size:0"><a target="_blank" href="https://www.youtube.com/proximus" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img alt="Proximus YouTube" width="50" src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_yt.png" referrerpolicy title="Proximus YouTube" class="adapt-img" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                              <td class="g ce" style="padding:0;Margin:0;width:20px"></td>
+                              <td valign="top" class="esdev-mso-td" style="padding:0;Margin:0">
+                              <table cellspacing="0" align="right" cellpadding="0" class="bj" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:420px">
+                                  <table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="left" style="padding:0;Margin:0;font-size:0"><a target="_blank" href="https://www.facebook.com/proximusbe" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img alt="Proximus Facebook" width="50" src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_fb.png" referrerpolicy title="Proximus Facebook" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+                        <!--[if !mso]><!-- -->
+                        <tr class="z" style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
+                          <td bgcolor="#5c2d91" align="left" style="padding:30px 0 0 40px;Margin:0;background-color:#5c2d91">
+                          <table cellpadding="0" cellspacing="0" class="esdev-mso-table" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:560px">
+                            <tbody>
+                            <tr>
+                              <td valign="top" class="esdev-mso-td" style="padding:0;Margin:0">
+                              <table cellpadding="0" cellspacing="0" align="left" class="bi" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:180px">
+                                  <table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="right" style="padding:0;Margin:0;font-size:0"><a target="_blank" href="https://www.instagram.com/proximus" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img title="Proximus Instagram" src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_insta.png" alt="Proximus Instagram" width="50" referrerpolicy class="img-6680" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                              <td class="g ce" style="padding:0;Margin:0;width:20px"></td>
+                              <td valign="top" class="esdev-mso-td" style="padding:0;Margin:0">
+                              <table align="left" cellpadding="0" cellspacing="0" class="bi" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:80px">
+                                  <table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="center" style="padding:0;Margin:0;font-size:0"><a target="_blank" href="https://www.youtube.com/proximus" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img width="50" referrerpolicy title="Proximus YouTube" src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_yt.png" alt="Proximus YouTube" class="img-3694" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                              <td class="g ce" style="padding:0;Margin:0;width:20px"></td>
+                              <td valign="top" class="esdev-mso-td" style="padding:0;Margin:0">
+                              <table cellpadding="0" cellspacing="0" align="right" class="bj" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                                <tbody>
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0;width:260px">
+                                  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tbody>
+                                    <tr>
+                                      <td align="left" class="w" style="padding:0;Margin:0;font-size:0"><a target="_blank" href="https://www.facebook.com/proximusbe" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#2CB543;font-size:14px"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_fb.png" alt="Proximus Facebook" width="50" referrerpolicy title="Proximus Facebook" class="img-8123" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></a></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+                        <!--<![endif]-->
+                        <tr>
+                          <td align="left" bgcolor="#5c2d91" class="cd" style="padding:30px 0 0;Margin:0;background-color:#5c2d91">
+                          <table cellspacing="0" width="100%" cellpadding="0" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                            <tbody>
+                            <tr>
+                              <td align="left" style="padding:0;Margin:0;width:600px">
+                              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                <tbody>
+                                <!--[if !mso]><!-- -->
+                                <tr class="z" style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
+                                  <td align="center" class="cc cb ca" style="padding:20px;Margin:0;font-size:0">
+                                  <table cellspacing="0" border="0" width="40%" height="100%" cellpadding="0" class="bp i" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tbody>
+                                    <tr>
+                                      <td style="padding:0;Margin:0;width:100%;margin:0px;border-bottom:1px solid #8d6cb2;background:none;height:0px"></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                                <!--<![endif]-->
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#5C2D91" align="left" class="bz" style="padding:0 20px 0 0;Margin:0;background-color:#5c2d91"><!--[if mso]><table style="width:580px" cellpadding="0" cellspacing="0"><tr><td style="width:420px" valign="top"><![endif]-->
+                          <table align="left" cellpadding="0" cellspacing="0" class="bi" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                            <tbody>
+                            <tr>
+                              <td align="center" valign="top" class="ci" style="padding:0;Margin:0;width:420px">
+                              <table bgcolor="#5C2D91" cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#5c2d91;border-radius:10px" role="presentation">
+                                <tbody>
+                                <tr>
+                                  <td align="left" class="e bx bw by" style="padding:0 0 30px 40px;Margin:0">
+                                  <p class="x f" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:15px;letter-spacing:0;color:#ffffff;font-size:10px;Margin:0">Tous droits réservés, © <strong style="font-weight:700 !important"><a href="https://www.proximus.com/fr/our-company/company.html" target="_blank" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#ffffff;font-size:10px;font-family:verdana, geneva, sans-serif">2026 Proximus</a></strong></p>
+                                  <p class="x f" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:15px;letter-spacing:0;color:#ffffff;font-size:10px;Margin:0">
+                                    <br>
+                                  </p>
+                                  <p class="x f" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:15px;letter-spacing:0;color:#ffffff;font-size:10px;Margin:0"><a class="droppable" id="optout" href="#" target="_blank" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#ffffff;font-size:10px;font-family:verdana, geneva, sans-serif">Se désinscrire</a> | <a target="_blank" href="https://www.proximus.be/fr/id_cr_warnland/particuliers/r-orphans/informations-legales.html" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#ffffff;font-size:10px;font-family:verdana, geneva, sans-serif">Mentions légales</a> | <a href="https://www.proximus.be/fr/id_cr_privacy_policy/particuliers/r-orphans/vie-privee.html" target="_blank" style="mso-line-height-rule:exactly;font-weight:inherit;text-decoration:underline;color:#ffffff;font-size:10px;font-family:verdana, geneva, sans-serif">Vie privée</a></p>
+                                  <p class="x f" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:15px;letter-spacing:0;color:#ffffff;font-size:10px;Margin:0">
+                                    <br>
+                                  </p>
+                                  <p class="x f" style="mso-line-height-rule:exactly;font-weight:normal;font-family:verdana, geneva, sans-serif;line-height:15px;letter-spacing:0;color:#ffffff;font-size:10px;Margin:0">Proximus SA de droit public, Boulevard du Roi Albert II, 27 B - 1030 Bruxelles, TVA BE 0202.239.951 RPM Bruxelles, BE82 2100 008 8968 GEBABEBB</p>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          <!--[if mso]></td><td style="width:0px" valign="top"><![endif]-->
+                          <table cellspacing="0" align="right" cellpadding="0" class="bj" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                            <tbody>
+                            <tr>
+                              <td align="left" class="cj" style="padding:0;Margin:0;width:160px">
+                              <table cellspacing="0" width="100%" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                <tbody>
+                                <tr>
+                                  <td align="center" style="padding:0;Margin:0;font-size:0px"><img title="Logo Proximus" referrerpolicy src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/prox.png" alt="Logo Proximus" width="130" class="img-1584" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none;margin:0"></td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          <!--[if mso]></td></tr></table><![endif]--></td>
+                        </tr>
+                        </tbody>
+                      </table>
                       </td>
                     </tr>
-                    <tr>
-                      <td class="pxs-footer-social" style="padding:30px 40px">
-                        <table role="presentation" width="190" cellpadding="0" cellspacing="0" border="0" style="width:190px;border-collapse:collapse;table-layout:fixed">
-                          <tr>
-                              <td width="50" style="width:50px"><a href="https://www.instagram.com/proximus" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_insta.png" alt="Proximus Instagram" width="50" border="0" style="display:block;border:0;width:50px"></a></td>
-                              <td width="20" style="width:20px;font-size:0;line-height:0">&nbsp;</td>
-                              <td width="50" style="width:50px"><a href="https://www.youtube.com/proximus" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_yt.png" alt="Proximus YouTube" width="50" border="0" style="display:block;border:0;width:50px"></a></td>
-                              <td width="20" style="width:20px;font-size:0;line-height:0">&nbsp;</td>
-                              <td width="50" style="width:50px"><a href="https://www.facebook.com/proximusbe" target="_blank"><img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/2026_footer_fb.png" alt="Proximus Facebook" width="50" border="0" style="display:block;border:0;width:50px"></a></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;table-layout:fixed">
-                          <tr>
-                            <td class="pxs-footer-legal" width="380" valign="top" style="padding:0 0 30px 40px;color:#ffffff;font-size:10px;line-height:15px;mso-line-height-rule:exactly">
-                              <p style="margin:0 0 15px">Tous droits réservés, © <strong><a href="https://www.proximus.com/fr/our-company/company.html" target="_blank" style="color:#ffffff;text-decoration:underline">2026 Proximus</a></strong></p>
-                              <p style="margin:0 0 15px"><a href="#" id="optout" class="droppable" target="_blank" style="color:#ffffff;text-decoration:underline">Se désinscrire</a> | <a href="https://www.proximus.be/fr/id_cr_warnland/particuliers/r-orphans/informations-legales.html" target="_blank" style="color:#ffffff;text-decoration:underline">Mentions légales</a> | <a href="https://www.proximus.be/fr/id_cr_privacy_policy/particuliers/r-orphans/vie-privee.html" target="_blank" style="color:#ffffff;text-decoration:underline">Vie privée</a></p>
-                              <p style="margin:0">Proximus SA de droit public, Boulevard du Roi Albert II, 27 B - 1030 Bruxelles, TVA BE 0202.239.951 RPM Bruxelles, BE82 2100 008 8968 GEBABEBB</p>
-                            </td>
-                            <td class="pxs-footer-logo" align="center" valign="middle" style="padding:0 20px 30px 0">
-                              <img src="https://www.proximus.be/dam/cdn/mails/DIG/2026_PXS_FOOTER/prox.png" alt="Logo Proximus" width="130" border="0" style="display:block;border:0;width:130px">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
+                    </tbody>
                   </table>
 
                 </td>
