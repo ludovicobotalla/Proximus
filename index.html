@@ -52,6 +52,21 @@
       h3{margin: 0;color: #000;font-weight: 400;}
       h5{text-transform: uppercase;letter-spacing: .02rem;line-height: 0;margin-top: 3em;}
       h6{color: #000;}
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 2em;
+      }
+      .proximus-logo {
+        width: 5em;
+        height: auto;
+      }
+      .proximus-logo img, .arrow_container img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
       /*Accordion*/
       .accordion {
         padding:1em 0;
@@ -59,27 +74,51 @@
         outline:none;
         transition:0.2s;
       }
+      .accordion.flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .accordion.flex.active .arrow_container {
+        transform: rotate(180deg);
+      }
+      .arrow_container {
+        width: 1em;
+        height: auto;
+        transition: all 200ms ease-in-out;
+      }
       .accordion:hover {
         opacity:.6;
       }
       .panel {
         display:none;
         overflow:hidden;
+        padding-bottom: 1em;
       }
       .accordion_wrapper {
         border-bottom:.1rem solid #5c2d9112;
       }
+      @media screen and (orientation: portrait) {
+        body {
+          width: 90%;
+        }
+      }
 
     </style>
-    <link rel="icon" type="image/x-icon" href="/assets/proximus.ico">
+    <link rel="icon" type="image/x-icon" href="proximus.ico">
   </head>
   <body>
     <!--Title-->
-    <h1>Proximus eDM</h1>
-    <br>
+    <header>
+      <h1>Proximus eDM</h1>
+      <div class="proximus-logo"><img src="/assets/Risorsa 1.png"></div>
+    </header>
     <!--Fiber-->
     <div class="accordion_wrapper">
-      <h3 class="accordion"><span class="date">24.11.26 </span>Fiber RES Brownfield acquisision rulers</h3>
+      <div class="accordion flex">
+        <h3><span class="date">24.11.26 </span>Fiber RES Brownfield acquisision rulers</h3>
+        <div class="arrow_container"><img src="/assets/arrow-down.png"></div>
+      </div>
       <div class="panel">
         <ul>
           <li><a href="Fiber RES Brownfield acquisision rulers/Fiber_FR/Do/Prospect/fiber_do_prospect_fr.html" target="_blank">Do Template (Prospect)</a></li>
@@ -90,7 +129,10 @@
     </div>
     <!--Beego Partnership-->
     <div class="accordion_wrapper">
-      <h3 class="accordion"><span class="date">24.07.26 </span>Beego Partnership Jul 2026</h3>
+      <div class="accordion flex">
+        <h3><span class="date">24.07.26 </span>Beego Partnership Jul 2026</h3>
+        <div class="arrow_container"><img src="/assets/arrow-down.png"></div>
+      </div>
       <div class="panel">
         <a href="Partnership Beego/Partnership Beego_Jul26_FR/partnership-beego_jul26_fr.html" target="_blank">&#8618; Beego Partnership FR</a>
         <a href="Partnership Beego/Partnership Beego_Jul26_NL/partnership-beego_jul26_nl.html" target="_blank">&#8618; Beego Partnership NL</a>
@@ -98,7 +140,10 @@
     </div>
     <!--2025-->
     <div class="accordion_wrapper">
-      <h3 class="accordion">2025</h3>
+      <div class="accordion flex">
+        <h3>2025</h3>
+        <div class="arrow_container"><img src="/assets/arrow-down.png"></div>
+      </div>
       <div class="panel">
         <!--Proximus+ app National Day 2025-->
         <h3 class="accordion"><span class="date">16.07.25 </span>Proximus+ app National Day 2025</h3>
@@ -112,7 +157,10 @@
     </div>
     <!--2024-->
     <div class="accordion_wrapper">
-      <h3 class="accordion">2024</h3>
+      <div class="accordion flex">
+        <h3>2024</h3>
+        <div class="arrow_container"><img src="/assets/arrow-down.png"></div>
+      </div>
       <div class="panel">
         <!--Flash Sales 2024-->
         <div class="accordion_wrapper">
@@ -162,102 +210,105 @@
       </div>
     </div>
     <!--2023-->
-    <h3 class="accordion">2023</h3>
-      <div class="panel">
-        <!--BCM – Party-->
-        <div class="accordion_wrapper">
-          <h3 class="accordion"><span class="date">23.11.15 </span>BCM Party</h3>
-          <div class="panel">
-            <a href="BCM party/bcm-party.html" target="_blank">&#8618; BCM Party</a>
-            <a href="BCM party/static image.html" target="_blank">&#8618; BCM Party</a>
-          </div>
-        </div>
-        <!--Conscious raising Autumn 2023-->
-        <div class="accordion_wrapper">
-          <h3 class="accordion"><span class="date">23.06.21 </span>Conscious raising &dash; Autumn</h3>
-          <div class="panel">
-            <a href="Conscious raising_Autumn/index-fr.html" target="_blank">&#8618; RES_FR</a>
-            <a href="Conscious raising_Autumn/index-nl.html" target="_blank">&#8618; RES_NL</a>
-          </div>
-        </div>
-        <!--Post onboarding-->
-        <div class="accordion_wrapper">
-          <h3 class="accordion"><span class="date">23.09.20 </span>Post Onboarding</h3>
-          <div class="panel">
-            <h5>Proximus+</h5>
-            <a href="PostOnboarding-communications_RES/Proximus+/MVP1_ONBOARDING_Proximus+_fr.html" target="_blank">&#8618; MPV1_Proximus+_FR</a>
-            <a href="PostOnboarding-communications_RES/Proximus+/MVP2_ONBOARDING_Proximus+_fr.html" target="_blank">&#8618; MPV2_Proximus+_FR</a>
-            <a href="PostOnboarding-communications_RES/Proximus+/MVP1_ONBOARDING_Proximus+_nl.html" target="_blank">&#8618; MPV1_Proximus+_NL</a>
-            <a href="PostOnboarding-communications_RES/Proximus+/MVP2_ONBOARDING_Proximus+_nl.html" target="_blank">&#8618; MPV2_Proximus+_NL</a>
-            <h5>POB0</h5>
-            <a href="PostOnboarding-communications_RES/POB0/2BLOCKS_ONBOARDING_POB0_fr.html" target="_blank">&#8618; 2BLOCKS_POB0_FR</a>
-            <a href="PostOnboarding-communications_RES/POB0/3BLOCKS_ONBOARDING_POB0_fr.html" target="_blank">&#8618; 3BLOCKS_POB0_FR</a>
-            <a href="PostOnboarding-communications_RES/POB0/4BLOCKS_ONBOARDING_POB0_fr.html" target="_blank">&#8618; 4BLOCKS_POB0_FR</a>
-            <a href="PostOnboarding-communications_RES/POB0/2BLOCKS_ONBOARDING_POB0_nl.html" target="_blank">&#8618; 2BLOCKS_POB0_NL</a>
-            <a href="PostOnboarding-communications_RES/POB0/3BLOCKS_ONBOARDING_POB0_nl.html" target="_blank">&#8618; 3BLOCKS_POB0_NL</a>
-            <a href="PostOnboarding-communications_RES/POB0/4BLOCKS_ONBOARDING_POB0_nl.html" target="_blank">&#8618; 4BLOCKS_POB0_NL</a>
-            <h5>Pickx</h5>
-            <a href="PostOnboarding-communications_RES/Pickx/MVP1_ONBOARDING_Pickx_fr.html" target="_blank">&#8618; MVP1_Pickx_FR</a>
-            <a href="PostOnboarding-communications_RES/Pickx/MVP2_ONBOARDING_Pickx_fr.html" target="_blank">&#8618; MVP2_Pickx_FR</a>
-            <a href="PostOnboarding-communications_RES/Pickx/MVP1_ONBOARDING_Pickx_nl.html" target="_blank">&#8618; MVP1_Pickx_NL</a>
-            <a href="PostOnboarding-communications_RES/Pickx/MVP2_ONBOARDING_Pickx_nl.html" target="_blank">&#8618; MVP2_Pickx_NL</a>
-            <h5>Enjoy</h5>
-            <a href="PostOnboarding-communications_RES/Enjoy/MVP1_ONBOARDING_Enjoy_fr.html" target="_blank">&#8618; MVP1_Enjoy_FR</a>
-            <a href="PostOnboarding-communications_RES/Enjoy/MVP2_ONBOARDING_Enjoy_fr.html" target="_blank">&#8618; MVP2_Enjoy_FR</a>
-            <a href="PostOnboarding-communications_RES/Enjoy/MVP1_ONBOARDING_Enjoy_nl.html" target="_blank">&#8618; MVP1_Enjoy_NL</a>
-            <a href="PostOnboarding-communications_RES/Enjoy/MVP2_ONBOARDING_Enjoy_nl.html" target="_blank">&#8618; MVP2_Enjoy_NL</a>
-            <h5>Epress</h5>
-            <a href="PostOnboarding-communications_RES/Epress/MVP1_ONBOARDING_Epress_fr.html" target="_blank">&#8618; MVP1_Epress_FR</a>
-            <a href="PostOnboarding-communications_RES/Epress/MVP2_ONBOARDING_Epress_fr.html" target="_blank">&#8618; MVP2_Epress_FR</a>
-            <a href="PostOnboarding-communications_RES/Epress/MVP1_ONBOARDING_Epress_nl.html" target="_blank">&#8618; MVP1_Epress_NL</a>
-            <a href="PostOnboarding-communications_RES/Epress/MVP2_ONBOARDING_Epress_nl.html" target="_blank">&#8618; MVP2_Epress_NL</a>
-            <h5>Fiber</h5>
-            <a href="PostOnboarding-communications_RES/Fiber/index-fr.html" target="_blank">&#8618; Fiber_FR</a>
-            <a href="PostOnboarding-communications_RES/Fiber/index-nl.html" target="_blank">&#8618; Fiber_NL</a>
-          </div>
-        </div>
-        <!--Flash Sales-->
-        <div class="accordion_wrapper">
-          <h3 class="accordion"><span class="date">23.07.10 </span>Flash Sales</h3>
-          <div class="panel">
-            <a href="Flash Sales_July2023/1an/index-fr.html" target="_blank">&#8618; 1 an_FR</a>
-            <a href="Flash Sales_July2023/1an/index-nl.html" target="_blank">&#8618; 1 an_NL</a>
-            <a href="Flash Sales_July2023/180euros/index-fr.html" target="_blank">&#8618; 180 €_FR</a>
-            <a href="Flash Sales_July2023/180euros/index-nl.html" target="_blank">&#8618; 180 €_NL</a>
-          </div>
-        </div>
-        <!--Samsung Z Release-->
-        <div class="accordion_wrapper">
-          <h3 class="accordion"><span class="date">23.07.07 </span>Samsung Z release</h3>
-          <div class="panel">
-            <h5>Normal</h5>
-            <a href="Samsung Z serie_Release/RES_Flip_Normal/index-fr.html" target="_blank">&#8618; RES_Flip_Normal_FR</a>
-            <a href="Samsung Z serie_Release/RES_Flip_Normal/index-nl.html" target="_blank">&#8618; RES_Flip_Normal_NL</a>
-            <a href="Samsung Z serie_Release/SE_Fold_Normal/index-fr.html" target="_blank">&#8618; SE_Fold_Normal_FR</a>
-            <a href="Samsung Z serie_Release/SE_Fold_Normal/index-nl.html" target="_blank">&#8618; SE_Fold_Normal_NL</a>
-            <h5>Le Soir</h5>
-            <a href="Samsung Z serie_Release/RES_Flip_LeSoir/index-fr.html" target="_blank">&#8618; RES_Flip_LeSoir_FR</a>
-            <h5>Qualifio</h5>
-            <a href="Samsung Z serie_Release/RES_Flip_Qualifio/index-fr.html" target="_blank">&#8618; RES_Flip_Qualifio_FR</a>
-            <a href="Samsung Z serie_Release/RES_Flip_Qualifio/index-nl.html" target="_blank">&#8618; RES_Flip_Qualifio_NL</a>
-            <a href="Samsung Z serie_Release/SE_Fold_Qualifio/index-fr.html" target="_blank">&#8618; SE_Fold_Qualifio_FR</a>
-            <a href="Samsung Z serie_Release/SE_Fold_Qualifio/index-nl.html" target="_blank">&#8618; SE_Fold_Qualifio_NL</a>
-            <h5>Retargeting</h5>
-            <a href="Samsung Z serie_Release/RES_Retargeting/index-fr.html" target="_blank">&#8618; RES_Retargeting_FR</a>
-            <a href="Samsung Z serie_Release/RES_Retargeting/index-nl.html" target="_blank">&#8618; RES_Retargeting_NL</a>
-            <a href="Samsung Z serie_Release/SE_Retargeting/index-fr.html" target="_blank">&#8618; SE_Retargeting_FR</a>
-            <a href="Samsung Z serie_Release/SE_Retargeting/index-nl.html" target="_blank">&#8618; SE_Retargeting_NL</a>
-          </div>
-        </div>
-        <!--Conscious raising Summer 2023-->
-        <h3 class="accordion"><span class="date">23.06.21 </span>Conscious raising &dash; Summer</h3>
+    <div class="accordion flex">
+      <h3>2023</h3>
+      <div class="arrow_container"><img src="/assets/arrow-down.png"></div>
+    </div>
+    <div class="panel">
+      <!--BCM – Party-->
+      <div class="accordion_wrapper">
+        <h3 class="accordion"><span class="date">23.11.15 </span>BCM Party</h3>
         <div class="panel">
-          <a href="Conscious raising_Summer/RES/index-fr.html" target="_blank">&#8618; RES_FR</a>
-          <a href="Conscious raising_Summer/RES/index-nl.html" target="_blank">&#8618; RES_NL</a>
-          <a href="Conscious raising_Summer/SE/index-fr.html" target="_blank">&#8618; SE_FR</a>
-          <a href="Conscious raising_Summer/SE/index-nl.html" target="_blank">&#8618; SE_NL</a>
+          <a href="BCM party/bcm-party.html" target="_blank">&#8618; BCM Party</a>
+          <a href="BCM party/static image.html" target="_blank">&#8618; BCM Party</a>
         </div>
       </div>
+      <!--Conscious raising Autumn 2023-->
+      <div class="accordion_wrapper">
+        <h3 class="accordion"><span class="date">23.06.21 </span>Conscious raising &dash; Autumn</h3>
+        <div class="panel">
+          <a href="Conscious raising_Autumn/index-fr.html" target="_blank">&#8618; RES_FR</a>
+          <a href="Conscious raising_Autumn/index-nl.html" target="_blank">&#8618; RES_NL</a>
+        </div>
+      </div>
+      <!--Post onboarding-->
+      <div class="accordion_wrapper">
+        <h3 class="accordion"><span class="date">23.09.20 </span>Post Onboarding</h3>
+        <div class="panel">
+          <h5>Proximus+</h5>
+          <a href="PostOnboarding-communications_RES/Proximus+/MVP1_ONBOARDING_Proximus+_fr.html" target="_blank">&#8618; MPV1_Proximus+_FR</a>
+          <a href="PostOnboarding-communications_RES/Proximus+/MVP2_ONBOARDING_Proximus+_fr.html" target="_blank">&#8618; MPV2_Proximus+_FR</a>
+          <a href="PostOnboarding-communications_RES/Proximus+/MVP1_ONBOARDING_Proximus+_nl.html" target="_blank">&#8618; MPV1_Proximus+_NL</a>
+          <a href="PostOnboarding-communications_RES/Proximus+/MVP2_ONBOARDING_Proximus+_nl.html" target="_blank">&#8618; MPV2_Proximus+_NL</a>
+          <h5>POB0</h5>
+          <a href="PostOnboarding-communications_RES/POB0/2BLOCKS_ONBOARDING_POB0_fr.html" target="_blank">&#8618; 2BLOCKS_POB0_FR</a>
+          <a href="PostOnboarding-communications_RES/POB0/3BLOCKS_ONBOARDING_POB0_fr.html" target="_blank">&#8618; 3BLOCKS_POB0_FR</a>
+          <a href="PostOnboarding-communications_RES/POB0/4BLOCKS_ONBOARDING_POB0_fr.html" target="_blank">&#8618; 4BLOCKS_POB0_FR</a>
+          <a href="PostOnboarding-communications_RES/POB0/2BLOCKS_ONBOARDING_POB0_nl.html" target="_blank">&#8618; 2BLOCKS_POB0_NL</a>
+          <a href="PostOnboarding-communications_RES/POB0/3BLOCKS_ONBOARDING_POB0_nl.html" target="_blank">&#8618; 3BLOCKS_POB0_NL</a>
+          <a href="PostOnboarding-communications_RES/POB0/4BLOCKS_ONBOARDING_POB0_nl.html" target="_blank">&#8618; 4BLOCKS_POB0_NL</a>
+          <h5>Pickx</h5>
+          <a href="PostOnboarding-communications_RES/Pickx/MVP1_ONBOARDING_Pickx_fr.html" target="_blank">&#8618; MVP1_Pickx_FR</a>
+          <a href="PostOnboarding-communications_RES/Pickx/MVP2_ONBOARDING_Pickx_fr.html" target="_blank">&#8618; MVP2_Pickx_FR</a>
+          <a href="PostOnboarding-communications_RES/Pickx/MVP1_ONBOARDING_Pickx_nl.html" target="_blank">&#8618; MVP1_Pickx_NL</a>
+          <a href="PostOnboarding-communications_RES/Pickx/MVP2_ONBOARDING_Pickx_nl.html" target="_blank">&#8618; MVP2_Pickx_NL</a>
+          <h5>Enjoy</h5>
+          <a href="PostOnboarding-communications_RES/Enjoy/MVP1_ONBOARDING_Enjoy_fr.html" target="_blank">&#8618; MVP1_Enjoy_FR</a>
+          <a href="PostOnboarding-communications_RES/Enjoy/MVP2_ONBOARDING_Enjoy_fr.html" target="_blank">&#8618; MVP2_Enjoy_FR</a>
+          <a href="PostOnboarding-communications_RES/Enjoy/MVP1_ONBOARDING_Enjoy_nl.html" target="_blank">&#8618; MVP1_Enjoy_NL</a>
+          <a href="PostOnboarding-communications_RES/Enjoy/MVP2_ONBOARDING_Enjoy_nl.html" target="_blank">&#8618; MVP2_Enjoy_NL</a>
+          <h5>Epress</h5>
+          <a href="PostOnboarding-communications_RES/Epress/MVP1_ONBOARDING_Epress_fr.html" target="_blank">&#8618; MVP1_Epress_FR</a>
+          <a href="PostOnboarding-communications_RES/Epress/MVP2_ONBOARDING_Epress_fr.html" target="_blank">&#8618; MVP2_Epress_FR</a>
+          <a href="PostOnboarding-communications_RES/Epress/MVP1_ONBOARDING_Epress_nl.html" target="_blank">&#8618; MVP1_Epress_NL</a>
+          <a href="PostOnboarding-communications_RES/Epress/MVP2_ONBOARDING_Epress_nl.html" target="_blank">&#8618; MVP2_Epress_NL</a>
+          <h5>Fiber</h5>
+          <a href="PostOnboarding-communications_RES/Fiber/index-fr.html" target="_blank">&#8618; Fiber_FR</a>
+          <a href="PostOnboarding-communications_RES/Fiber/index-nl.html" target="_blank">&#8618; Fiber_NL</a>
+        </div>
+      </div>
+      <!--Flash Sales-->
+      <div class="accordion_wrapper">
+        <h3 class="accordion"><span class="date">23.07.10 </span>Flash Sales</h3>
+        <div class="panel">
+          <a href="Flash Sales_July2023/1an/index-fr.html" target="_blank">&#8618; 1 an_FR</a>
+          <a href="Flash Sales_July2023/1an/index-nl.html" target="_blank">&#8618; 1 an_NL</a>
+          <a href="Flash Sales_July2023/180euros/index-fr.html" target="_blank">&#8618; 180 €_FR</a>
+          <a href="Flash Sales_July2023/180euros/index-nl.html" target="_blank">&#8618; 180 €_NL</a>
+        </div>
+      </div>
+      <!--Samsung Z Release-->
+      <div class="accordion_wrapper">
+        <h3 class="accordion"><span class="date">23.07.07 </span>Samsung Z release</h3>
+        <div class="panel">
+          <h5>Normal</h5>
+          <a href="Samsung Z serie_Release/RES_Flip_Normal/index-fr.html" target="_blank">&#8618; RES_Flip_Normal_FR</a>
+          <a href="Samsung Z serie_Release/RES_Flip_Normal/index-nl.html" target="_blank">&#8618; RES_Flip_Normal_NL</a>
+          <a href="Samsung Z serie_Release/SE_Fold_Normal/index-fr.html" target="_blank">&#8618; SE_Fold_Normal_FR</a>
+          <a href="Samsung Z serie_Release/SE_Fold_Normal/index-nl.html" target="_blank">&#8618; SE_Fold_Normal_NL</a>
+          <h5>Le Soir</h5>
+          <a href="Samsung Z serie_Release/RES_Flip_LeSoir/index-fr.html" target="_blank">&#8618; RES_Flip_LeSoir_FR</a>
+          <h5>Qualifio</h5>
+          <a href="Samsung Z serie_Release/RES_Flip_Qualifio/index-fr.html" target="_blank">&#8618; RES_Flip_Qualifio_FR</a>
+          <a href="Samsung Z serie_Release/RES_Flip_Qualifio/index-nl.html" target="_blank">&#8618; RES_Flip_Qualifio_NL</a>
+          <a href="Samsung Z serie_Release/SE_Fold_Qualifio/index-fr.html" target="_blank">&#8618; SE_Fold_Qualifio_FR</a>
+          <a href="Samsung Z serie_Release/SE_Fold_Qualifio/index-nl.html" target="_blank">&#8618; SE_Fold_Qualifio_NL</a>
+          <h5>Retargeting</h5>
+          <a href="Samsung Z serie_Release/RES_Retargeting/index-fr.html" target="_blank">&#8618; RES_Retargeting_FR</a>
+          <a href="Samsung Z serie_Release/RES_Retargeting/index-nl.html" target="_blank">&#8618; RES_Retargeting_NL</a>
+          <a href="Samsung Z serie_Release/SE_Retargeting/index-fr.html" target="_blank">&#8618; SE_Retargeting_FR</a>
+          <a href="Samsung Z serie_Release/SE_Retargeting/index-nl.html" target="_blank">&#8618; SE_Retargeting_NL</a>
+        </div>
+      </div>
+      <!--Conscious raising Summer 2023-->
+      <h3 class="accordion"><span class="date">23.06.21 </span>Conscious raising &dash; Summer</h3>
+      <div class="panel">
+        <a href="Conscious raising_Summer/RES/index-fr.html" target="_blank">&#8618; RES_FR</a>
+        <a href="Conscious raising_Summer/RES/index-nl.html" target="_blank">&#8618; RES_NL</a>
+        <a href="Conscious raising_Summer/SE/index-fr.html" target="_blank">&#8618; SE_FR</a>
+        <a href="Conscious raising_Summer/SE/index-nl.html" target="_blank">&#8618; SE_NL</a>
+      </div>
+    </div>
 
     <script>
       var acc = document.getElementsByClassName("accordion");
